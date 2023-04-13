@@ -1,0 +1,335 @@
+\documentclass[letterpaper,12pt,openright,oneside]{article}
+
+
+\usepackage[left=2.5cm,top=2cm,right=2.5cm,nohead,foot=.5cm]{geometry}
+\usepackage[spanish,mexico]{babel}
+%\usepackage[spanish]{babel}
+%\usepackage[latin1]{inputenc}
+\usepackage{times}
+\usepackage{url}
+\usepackage{pdflscape}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{babelbib}
+\usepackage{subfig}
+\usepackage{amsmath,amssymb,amsthm} 
+% assumes amsmath package installed
+%\usepackage[document]{ragged2e}
+\usepackage{hyperref}
+\hypersetup{
+colorlinks=true,
+citecolor=blue,
+urlcolor=black,
+}
+\urlstyle{rm}
+\expandafter\def\expandafter\UrlBreaks\expandafter{\UrlBreaks%  save the current one
+  \do\a\do\b\do\c\do\d\do\e\do\f\do\g\do\h\do\i\do\j%
+  \do\k\do\l\do\m\do\n\do\o\do\p\do\q\do\r\do\s\do\t%
+  \do\u\do\v\do\w\do\x\do\y\do\z\do\A\do\B\do\C\do\D%
+  \do\E\do\F\do\G\do\H\do\I\do\J\do\K\do\L\do\M\do\N%
+  \do\O\do\P\do\Q\do\R\do\S\do\T\do\U\do\V\do\W\do\X%
+  \do\Y\do\Z}
+\newcommand{\grad}{$^{\circ}$}
+\usepackage{multirow}
+\usepackage{todonotes}
+\usepackage{makecell}
+\usepackage{enumitem}
+\usepackage{array}
+\usepackage{amsmath}
+\usepackage{tabularx}
+\usepackage{bm,upgreek}
+\usepackage{afterpage}
+\usepackage{gensymb}
+\usepackage{float}
+\usepackage{marvosym}
+\usepackage{ragged2e}
+\definecolor{light-gray}{gray}{.7}
+%\spanishdecimal{.}
+
+%-------------------------------------------
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}
+\newcommand{\parcial}[2]{\frac{\partial{#1}}{\partial{#2}}}
+\newtheorem{lemma}{Lema}[subsection]
+%\newtheorem{proof}[theorem]{Proof}
+%\theoremstyle{definition}
+\newtheorem{defn}{Definition}
+\newtheorem{remark}{Remark}
+%\newcommand{\parcial}[2]{\frac{\partial{#1}}{\partial{#2}}}
+\DeclareMathOperator{\sign}{sign}
+\newcommand{\m}[1]{\mathbf{#1}}
+\DeclareMathOperator{\diag}{diag}
+
+\renewcommand{\baselinestretch}{1.15}
+
+\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
+\setlength {\marginparwidth }{2cm} 
+% ####################################################
+\usepackage{lineno} %paquete para agregar números a cada linea
+% ####################################################
+\begin{document}
+
+%\pagestyle{empty} %No headings for the first pages.
+
+
+%\includegraphics[width=0.05\textwidth]{./logo.jpg}~\\[1cm]
+
+\begin{titlepage}
+\begin{center}
+
+% Upper part of the page. The '~' is needed because \\
+% only works if a paragraph has started.
+
+
+\textsc{\LARGE Universidad Autónoma de Querétaro}\\[1 cm]
+\includegraphics[width=0.15\textwidth]{./uaqlogo}~\\[0.75cm]
+\textsc{\Large Facultad de Ingeniería \\ \large{Doctorado en Ingeniería}}\\[0.5 cm]
+\textsc{\large Seminario VI \\ (Enero 2023 - Julio 2023)}\\[0.5cm]
+%\small{Maestría en Instrumentación y Control Automático \\ 
+
+% Title
+%\HRule \\[0.4cm]
+{ 
+
+\huge \bfseries 
+
+GUÍA PMBOK
+\\[0.4cm] }
+%\vspace*{2cm}
+\vspace*{1.0cm}
+
+% Author and supervisor
+\large \textbf{Presentan:} \\
+\large \textbf{} Gendry Alfonso Francia\\\vspace*{0.5cm}
+Ireri Graciela Segura Gutierrez\\\vspace*{0.5cm}
+\large \textbf{} Julio Alberto Ramírez Montañez\\\vspace*{0.5cm}
+\large \textbf{} Luis Alberto Ángeles Hurtado\\\vspace*{0.5cm}
+
+\textbf{Profesor:} \\ Dr. Juan Carlos Jáuregui $^{1}$\\\vspace*{0.5cm}
+\raggedright
+$^{1}$ Universidad Autónoma de Querétaro, Facultad de Ingeniería.\\
+%$^{2}$ Instituto Tecnológico de Celaya, Departamento de Ingeniería Electrónica.
+\vfill
+\centering
+% Bottom of the page
+{\large \today}
+%{\large 5 de diciembre de 2020}
+\end{center}
+\end{titlepage}
+
+\newpage
+%%%%
+\hypersetup{linkcolor=black}
+\tableofcontents
+
+\newpage
+\linenumbers
+
+% \addcontentsline{toc}{section}{4.1 Develop Project Charter}
+% \section*{4.1 Develop Project Charter}
+\addcontentsline{toc}{section}{4.1 Desarrollo de la carta del proyecto}
+\section*{4.1 Desarrollo de la carta del proyecto}
+
+% .1 Inputs
+%  .1 Business documents
+%  .2 Agreements
+%  .3 Enterprise environmental
+%  factors
+%  .4 Organizational process
+%  assets
+% \addcontentsline{toc}{section}{4.1.1 Inputs}
+% \section*{4.1.1 Inputs}
+\addcontentsline{toc}{section}{4.1.1 Entradas}
+\section*{4.1.1 Entradas}
+% 
+% 
+% \addcontentsline{toc}{subsection}{4.1.1.1 Business documents}
+% \subsection*{4.1.1.1 Business documents}
+\addcontentsline{toc}{subsection}{4.1.1.1 Documentos de Negocios}
+\subsection*{4.1.1.1 Documentos de Negocios}
+
+En esta parte se debe describir la información necesaria desde un punto de vista empresarial para determinar si los resultados esperados del proyecto justifican la inversión requerida. Por lo general, la necesidad empresarial y el análisis de costo-beneficio están contenidos en el caso de negocio para justificar y establecer límites para el proyecto. El caso de estudio debe contener: demanda en el mercado, necesidades organizacionales, avances tecnológicos, requerimientos del consumidor, requerimientos legales, impacto ecológico y el impacto social. 
+El principal objetivo al empezar a armar el caso de estudio es definir la viabilidad económica en el documento, esto será utilizado para establecer la validez de los beneficios de un componente seleccionado que carece de una definición suficiente y que se utiliza como base para la autorización de otras actividades de gestión de proyectos. Es importante enumerar los objetivos y razones para el inicio del proyecto, con el objetivo de medir el éxito del proyecto al final del mismo.
+
+% 
+% 
+% \addcontentsline{toc}{subsection}{4.1.1.2 Agreements}
+% \subsection*{4.1.1.2 Agreements}
+\addcontentsline{toc}{subsection}{4.1.1.2 Acuerdos}
+\subsection*{4.1.1.2 Acuerdos}
+
+Una vez comenzado el documento es importante definir los acuerdos para delimitar las obligaciones de las partes y los objetivos que se quieren alcanzar.
+Los acuerdos pueden tomar la forma de contratos, memorandos de entendimiento (MOU), acuerdos de nivel de servicio (SLA), cartas de acuerdo, cartas de intención, acuerdos verbales, correo electrónico u otros acuerdos escritos. Normalmente, un contrato se utiliza cuando se realiza un proyecto para un cliente externo.
+Un contrato es un acuerdo mutuamente vinculante que obliga al vendedor a proporcionar los productos, servicios o resultados especificados; obliga al comprador a indemnizar al vendedor; y representa una relación jurídica que está sujeta a recurso en los tribunales. Los componentes principales en un documento de acuerdo variarán y pueden incluir, entre otros: 
+
+\begin{itemize}
+    \item Declaración de trabajo en materia de adquisiciones o entregables principales;
+    \item Cronograma, hitos o fecha en la que se requiere una programación;
+    \item Presentación de informes sobre el rendimiento;
+    \item Precios y condiciones de pago;
+    \item Criterios de inspección, calidad y aceptación;
+    \item Garantía y soporte futuro del producto;
+    \item Incentivos y sanciones;
+    \item Seguros y fianzas de cumplimiento;
+    \item Aprobaciones de subcontratistas subordinados;
+    \item Términos y condiciones generales;
+    \item Gestión de solicitudes de cambio; y
+    \item Cláusula de rescisión y mecanismos alternativos de resolución de conflictos.
+\end{itemize}
+% 
+% 
+% \addcontentsline{toc}{subsection}{4.1.1.3 Enterprise environmental factors}
+% \subsection*{4.1.1.3 Enterprise environmental factors}
+\addcontentsline{toc}{subsection}{4.1.1.3 Factores Ambientales Empresariales}
+\subsection*{4.1.1.3 Factores Ambientales Empresariales}
+
+Los factores ambientales que pueden influir al armar el documento son los siguientes:
+
+\begin{itemize}
+    \item Estándares gubernamentales o de la industria (calidad, seguridad, entre otros),
+    \item Leyes, restricciones y/o normativa vigente,
+    \item Condiciones del mercado,
+    \item Cultura y Política,
+    \item Marco organizacional,
+    \item Expectativas de las partes interesadas y umbrales de riesgo.
+\end{itemize}
+% 
+% 
+% \addcontentsline{toc}{subsection}{4.1.1.4 Organizational process assets}
+% \subsection*{4.1.1.4 Organizational process assets}
+\addcontentsline{toc}{subsection}{4.1.1.4 Activos de Procesos Organizativos}
+\subsection*{4.1.1.4 Activos de Procesos Organizativos}
+
+Los activos del proceso organizativo que pueden influir en el proceso de Elaboración de la Carta del Proyecto incluyen, entre otros, pero no limitados a:
+
+\begin{itemize}
+    \item \textbf{Políticas, procesos y procedimientos estándar de la organización}: Se refiere a las directrices, marcos y metodologías establecidos que una organización utiliza para iniciar y gestionar proyectos. Son importantes para garantizar que la carta del proyecto se elabora de forma coherente y estructurada, y que se ajusta a las metas y objetivos de la organización.
+    \item \textbf{Marco de gobierno de carteras, programas y proyectos} (funciones y procesos de gobierno para proporcionar orientación y toma de decisiones): Garantizan que los proyectos se ajustan a las metas y objetivos generales de la organización y se gestionan de forma coherente y estructurada pueden influir en la forma en que se elabora, revisa y aprueba la carta del proyecto, así como en los criterios utilizados para evaluar su integridad y calidad.
+    \item \textbf{Métodos de seguimiento y elaboración de informes}: Ayudar a las partes interesadas a mantenerse informadas sobre el progreso del proceso de elaboración de la Carta.
+    \item \textbf{Plantillas} (por ejemplo, plantilla de carta de proyecto);
+    \item \textbf{Repositorio de información histórica y lecciones aprendidas} (p. ej., registros y documentos del proyecto, información sobre los resultados de anteriores decisiones de selección de proyectos, e información sobre el rendimiento de anteriores proyectos)
+\end{itemize}
+
+%  
+%  
+% .2 Tools & Techniques
+%  .1 Expert judgment
+%  .2 Data gathering
+%  .3 Interpersonal and team
+%  skills
+%  .4 Meetings
+% \addcontentsline{toc}{section}{4.1.2 Tools \& Techniques}
+% \section*{4.1.2 Tools \& Techniques}
+\addcontentsline{toc}{section}{4.1.2 Técnicas y Herramientas}
+\section*{4.1.2 Técnicas y Herramientas}
+
+% 
+%
+% \addcontentsline{toc}{subsection}{4.1.2.1 Expert judgment}
+% \subsection*{4.1.2.1 Expert judgment}
+\addcontentsline{toc}{subsection}{4.1.2.1 Criterio/Juicio Experto}
+\subsection*{4.1.2.1 Criterio/Juicio Experto}
+
+El juicio experto se define como el juicio basado en la experiencia en un área de aplicación, área de conocimiento, disciplina, industria, etc., según corresponda a la actividad que se esté realizando. Dicha pericia puede ser aportada por cualquier grupo o persona con formación especializada, conocimientos, habilidades, experiencia o formación.
+Para este proceso, se debe considerar la experiencia de personas o grupos con conocimientos especializados o capacitación en los siguientes temas:
+
+\begin{itemize}
+    \item Estrategia Organizacional.
+    \item Gestión de Beneficios.
+    \item Conocimiento técnico de la industria y área de enfoque del proyecto.
+    \item Estimación de presupuesto y duración.
+    \item Identificación de riesgos.
+\end{itemize}
+% 
+% 
+% \addcontentsline{toc}{subsection}{4.1.2.2 Data gathering}
+% \subsection*{4.1.2.2 Data gathering}
+\addcontentsline{toc}{subsection}{4.1.2.2 Recopilación de datos}
+\subsection*{4.1.2.2 Recopilación de datos}
+
+Las técnicas de recopilación de datos que se pueden utilizar para el proceso incluyen, entre otras, las siguientes:
+
+\begin{itemize}
+    \item \textbf{Lluvia de ideas}: Esta técnica se utiliza para identificar una lista de ideas en un corto período de tiempo. Se lleva a cabo en un ambiente de grupo y está dirigido por un facilitador. La lluvia de ideas consta de dos partes: generación de ideas y análisis. La lluvia de ideas se puede utilizar para recopilar datos y soluciones o ideas de las partes interesadas, los expertos en la materia y los miembros del equipo al desarrollar el acta de constitución del proyecto.
+    \item \textbf{Grupos de enfoque}: Reúnen a las partes interesadas precalificadas y expertos en la materia para aprender sobre el riesgo percibido del proyecto, los criterios de éxito, expectativas y actitudes sobre un producto, servicio o resultado propuesto. Es guiado por un moderador capacitado para llevar la discusión de una manera más conversacional que una entrevista individual.
+    \item \textbf{Entrevistas}: Se utilizan para obtener información sobre requisitos, suposiciones o restricciones de alto nivel, criterios de aprobación y otra información de las partes interesadas hablando directamente con ellas. Entrevistar a participantes de proyectos experimentados, patrocinadores, otros ejecutivos y expertos en la materia puede ayudar a identificar y definir las características y funciones de los productos deseados.
+\end{itemize}
+% 
+% 
+% \addcontentsline{toc}{subsection}{4.1.2.3 Interpersonal and team skills}
+% \subsection*{4.1.2.3 Interpersonal and team skills}
+\addcontentsline{toc}{subsection}{4.1.2.3 Habilidades Interpersonales y de Equipo}
+\subsection*{4.1.2.3 Habilidades Interpersonales y de Equipo}
+
+Estas incluyen la gestión de conflictos, la facilitación y la gestión de reuniones.
+\textbf{La gestión de conflictos} es importante debido a que durante el desarrollo de un proyecto siempre esta expuesto a problemas, desde escases de recursos hasta en la diferencia de estilos de trabajo de los integrantes. 
+Hablando desde las habilidades interpersonales del equipo es necesario establecer ciertas reglas de trabajo, roles definidos, y líneas de comunicación, con la finalidad de reducir los conflictos internos. Entre las reglas pueden definirse los horarios de trabajo, el lugar del mismo, las acciones correctivas si se rompe alguna regla; mientras que en los roles se tiene que distinguir claramente la jerarquía, no todos pueden el líder de equipo, pero si pueden compartir responsabilidades, y en la línea de comunicación tiene que ser eficiente, si ocurre un problema este tiene que ser expuesto ante el grupo o los integrantes con mayor jerarquía para buscar soluciones.
+\textbf{La facilitación} es desarrollada por un miembro del equipo, el cual tendrá la responsabilidad de guiar al grupo, ayudando al entendimiento mutuo de los integrantes, favoreciendo que todos los integrantes entiendan los objetivos a alcanzar en el proyecto, y sus responsabilidades a desarrollar.
+\textbf{La gestión de reuniones} consiste en tomar medidas apropiadas para hacer que las reuniones sean usadas de manera eficaz, en lugar de perder tiempo. Para la planificación de las reuniones debe de considerarse estos pasos:
+
+\begin{itemize}
+    \item Preparar la agenda, estableciendo los objetivos de la reunión.
+    \item Asegurar un horario establecido, el cual no deberá de ser excedido.
+    \item Asegurarse que todos los miembros relevantes estén invitados, cada miembro del equipo tendrá una responsabilidad distinta, y no siempre será necesario que participen en todas las reuniones.
+    \item Registrar las acciones realizadas, con la finalidad de tener un historial, permitiendo medir los avances obtenidos entre reuniones.
+\end{itemize}
+
+% 
+% 
+% \addcontentsline{toc}{subsection}{4.1.2.4 Meetings}
+% \subsection*{4.1.2.4 Meetings}
+\addcontentsline{toc}{subsection}{4.1.2.4 Reuniones}
+\subsection*{4.1.2.4 Reuniones}
+
+Son elementos importantes utilizados para analizar el enfoque del proyecto, sus avances, los problemas presentados hasta el momento, con la finalidad de verificar el alcance de los objetivos expuestos desde el inicio del proyecto.
+La principal reunión a tener en cuenta es la reunión de lanzamiento, cuyo propósito es comunicar los objetivos del proyecto, su delimitación, los roles y responsabilidades de cada integrante del equipo.
+Es recomendable realizar una reunión al iniciar cada etapa del proyecto y varias intermedias con la finalidad de monitorear el avance obtenido y el desarrollo que se pretende alcanzar en la próxima etapa.
+
+% 
+%
+% .3 Outputs
+%  .1 Project charter
+%  .2 Assumption log
+% \addcontentsline{toc}{section}{4.1.3 DEVELOP PROJECT CHARTER: OUTPUTS}
+% \section*{4.1.3 DEVELOP PROJECT CHARTER: OUTPUTS}
+\addcontentsline{toc}{section}{4.1.3 Desarrollo de la carta del proyecto: Resultados}
+\section*{4.1.3 Desarrollo de la carta del proyecto: Resultados}
+
+% 
+%
+% \addcontentsline{toc}{subsection}{4.1.3.1 Project charter}
+% \subsection*{4.1.3.1 Project charter}
+\addcontentsline{toc}{subsection}{4.1.3.1 Acta de Constitución del Proyecto}
+\subsection*{4.1.3.1 Acta de Constitución del Proyecto}
+
+Crear un documento con las siguientes características.
+
+\begin{itemize}
+    \item El propósito o la justificación del proyecto,
+    \item Los objetivos medibles del proyecto y los criterios de éxito asociados,
+    \item Los requisitos de alto nivel,
+    \item Los supuestos y las restricciones,
+    \item La descripción de alto nivel del proyecto y sus límites,
+    \item Los riesgos de alto nivel,
+    \item El resumen del cronograma de hitos,
+    \item El resumen del presupuesto,
+    \item La lista de interesados,
+    \item Los requisitos de aprobación del proyecto (es decir, en qué consiste el éxito del proyecto, quién decide si el proyecto tiene éxito y quién firma la aprobación del proyecto),
+    \item El director del proyecto asignado, su responsabilidad y su nivel de autoridad
+    \item El nombre y el nivel de autoridad del patrocinador o de quienes autorizan el acta de constitución del proyecto.
+\end{itemize}
+% 
+% 
+% \addcontentsline{toc}{subsection}{4.1.3.2 Assumption log}
+% \subsection*{4.1.3.2 Assumption log}
+\addcontentsline{toc}{subsection}{4.1.3.2 Registro de supuestos}
+\subsection*{4.1.3.2 Registro de supuestos}
+
+Desarrollar un registro de supuestos más detallado para registrar todos los supuestos y restricciones a lo largo del ciclo de vida del proyecto.
+% Las suposiciones y restricciones estratégicas y operativas de alto nivel normalmente se identifican en el caso de negocios antes de que se inicie el proyecto y fluirán hacia el acta de constitución del proyecto. 
+Los supuestos de actividades y tareas de nivel inferior que se generan a lo largo del proyecto, como la definición de especificaciones técnicas, estimaciones, el cronograma, los riesgos, etc. 
+
+% 
+% 
+\end{document}
