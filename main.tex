@@ -17,12 +17,21 @@
 % assumes amsmath package installed
 %\usepackage[document]{ragged2e}
 \usepackage{hyperref}
+% \hypersetup{
+% colorlinks=true,
+% citecolor=blue,
+% urlcolor=blue,
+% }
 \hypersetup{
-colorlinks=true,
-citecolor=blue,
-urlcolor=black,
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    pdftitle={SeminarioVI (Enero 2023 - Julio 2023)},
+    pdfpagemode=FullScreen,
 }
-\urlstyle{rm}
+
+% \urlstyle{rm}
 \expandafter\def\expandafter\UrlBreaks\expandafter{\UrlBreaks%  save the current one
   \do\a\do\b\do\c\do\d\do\e\do\f\do\g\do\h\do\i\do\j%
   \do\k\do\l\do\m\do\n\do\o\do\p\do\q\do\r\do\s\do\t%
@@ -67,6 +76,7 @@ urlcolor=black,
 \setlength {\marginparwidth }{2cm} 
 % ####################################################
 \usepackage{lineno} %paquete para agregar números a cada linea
+\urlstyle{same}
 % ####################################################
 \begin{document}
 
@@ -127,55 +137,10 @@ $^{1}$ Universidad Autónoma de Querétaro, Facultad de Ingeniería.\\
 
 \newpage
 \linenumbers
-
-% \section{Datos generales}
-
-% \begin{table}[H]
-%     \centering
-%     \caption{Datos generales del proyecto para el seminario VI}
-%     \begin{tabular}{p{8cm} c}
-%     \hline
-%          NOMBRE DEL PROYECTO & CATEGORÍA EN LA QUE PARTICIPA\\
-%     \hline
-%         Resumen de PMBOK sexta edición 
-%             & \\
-%     \hline
-%     \end{tabular}
-%     \label{tab:my_label}
-% \end{table}
-% % 
-% % 
-% \begin{table}[H]
-%     \centering
-%     \caption{Alumnos responsables del proyecto}
-%     \begin{tabular}{l l}
-%          \hline
-%          Nombre & Correo electrónico \\
-%          \hline
-%          Gendry Alfonso Francia & gendry07@gmail.com\\
-%          Ireri Graciela Segura Gutierrez & irerisegura@gmail.com \\
-%          Julio Alberto Ramírez Montañez &  julio.ramirezm27@gmail.com\\
-%          Luis Alberto Ángeles Hurtado   &  alb3rt0.ah@gmail.com\\
-%          \hline
-%     \end{tabular}
-%     \label{tab:my_label}
-% \end{table}
-% % 
-% % 
-% \begin{table}[H]
-%     \centering
-%     \caption{Profesor corresponsable}
-%     \begin{tabular}{l l}
-%          \hline
-%          Nombre& Juan Carlos Jáuregui \\
-%          Correo electrónico & juancarlosjauregui2007@gmail.com  \\
-%          \hline
-%     \end{tabular}
-%     \label{tab:my_label}
-% \end{table}
 % 
-% 
-\section{Introducción}
+%
+\addcontentsline{toc}{section}{Introducción}
+\section*{Introducción}
 
 Un proyecto es un esfuerzo para lograr un objetivo específico mediante una serie especial de actividades interrelacionadas y la utilización adecuada de los recursos.
 Los proyectos posibilitan la identificación, análisis y selección de alternativas de solución adecuadas a necesidades o problemas específicos.
@@ -188,13 +153,14 @@ Para el PMBOK la administración de proyectos es la aplicación de conocimientos
 % 
 % 
 % ¿Qué voy a hacer?, ¿Cómo lo voy a hacer? y ¿Para qué lo voy a hacer?
-
-\section{Objetivo general}
+\addcontentsline{toc}{section}{Objetivo general}
+\section*{Objetivo general}
 
 Desarrollar un documento que permita a los estudiantes del programa doctoral entender la administración de su proyecto desde el punto de vista del PMBOK para implementarlo en sus trabajos de investigación. 
 % 
 %
-\subsection{Objetivos específicos}
+\addcontentsline{toc}{subsection}{Objetivos específicos}
+\subsection*{Objetivos específicos}
 
 \begin{itemize}
     \item Resumir la sexta versión de PMBOK para adaptarlo a un proyecto de investigación.
@@ -203,8 +169,10 @@ Desarrollar un documento que permita a los estudiantes del programa doctoral ent
 
 % \addcontentsline{toc}{section}{4.1 Develop Project Charter}
 % \section*{4.1 Develop Project Charter}
-\addcontentsline{toc}{section}{4.1 Desarrollo de la carta del proyecto}
-\section*{4.1 Desarrollo de la carta del proyecto}
+% \addcontentsline{toc}{section}{4.1 Desarrollo de la carta del proyecto}
+% \section*{4.1 Desarrollo de la carta del proyecto}
+\addcontentsline{toc}{section}{Desarrollo de la carta del proyecto}
+\section*{Desarrollo de la carta del proyecto}
 
 % .1 Inputs
 %  .1 Business documents
@@ -215,17 +183,21 @@ Desarrollar un documento que permita a los estudiantes del programa doctoral ent
 %  assets
 % \addcontentsline{toc}{section}{4.1.1 Inputs}
 % \section*{4.1.1 Inputs}
-\addcontentsline{toc}{section}{4.1.1 Entradas}
-\section*{4.1.1 Entradas}
+% \addcontentsline{toc}{section}{4.1.1 Entradas}
+% \section*{4.1.1 Entradas}
+\addcontentsline{toc}{section}{Entradas}
+\section*{Entradas}
 % 
 % 
 % \addcontentsline{toc}{subsection}{4.1.1.1 Business documents}
 % \subsection*{4.1.1.1 Business documents}
-\addcontentsline{toc}{subsection}{4.1.1.1 Documentos de Negocios}
+% \addcontentsline{toc}{subsection}{4.1.1.1 Documentos de Negocios}
+\addcontentsline{toc}{subsection}{Documentos de Negocios}
 
 Una carta de proyecto es un documento firmado que establece formalmente el alcance de un proyecto, deja en claro las metas y los objetivos del proyecto a los diferentes grupos o personas que están involucradas y que tienen un interés en común.
 
-\subsection*{4.1.1.1 Documentos de Negocios}
+% \subsection*{4.1.1.1 Documentos de Negocios}
+\subsection*{Documentos de Negocios}
 
 En esta parte se debe describir la información necesaria desde un punto de vista empresarial para determinar si los resultados esperados del proyecto justifican la inversión requerida. Por lo general, la necesidad empresarial y el análisis de costo-beneficio están contenidos en el caso de negocio para justificar y establecer límites para el proyecto. El caso de estudio debe contener: demanda en el mercado, necesidades organizacionales, avances tecnológicos, requerimientos del consumidor, requerimientos legales, impacto ecológico y el impacto social. 
 El principal objetivo al empezar a armar el caso de estudio es definir la viabilidad económica en el documento, esto será utilizado para establecer la validez de los beneficios de un componente seleccionado que carece de una definición suficiente y que se utiliza como base para la autorización de otras actividades de gestión de proyectos. Es importante enumerar los objetivos y razones para el inicio del proyecto, con el objetivo de medir el éxito del proyecto al final del mismo.
@@ -234,8 +206,10 @@ El principal objetivo al empezar a armar el caso de estudio es definir la viabil
 % 
 % \addcontentsline{toc}{subsection}{4.1.1.2 Agreements}
 % \subsection*{4.1.1.2 Agreements}
-\addcontentsline{toc}{subsection}{4.1.1.2 Acuerdos}
-\subsection*{4.1.1.2 Acuerdos}
+% \addcontentsline{toc}{subsection}{4.1.1.2 Acuerdos}
+% \subsection*{4.1.1.2 Acuerdos}
+\addcontentsline{toc}{subsection}{Acuerdos}
+\subsection*{Acuerdos}
 
 Una vez comenzado el documento es importante definir los acuerdos para delimitar las obligaciones de las partes y los objetivos que se quieren alcanzar.
 Los acuerdos pueden tomar la forma de contratos, memorandos de entendimiento (MOU), acuerdos de nivel de servicio (SLA), cartas de acuerdo, cartas de intención, acuerdos verbales, correo electrónico u otros acuerdos escritos. Normalmente, un contrato se utiliza cuando se realiza un proyecto para un cliente externo.
@@ -254,18 +228,19 @@ Un contrato es un acuerdo mutuamente vinculante que obliga al vendedor a proporc
     \item Términos y condiciones generales;
     \item Gestión de solicitudes de cambio; y
     \item Cláusula de rescisión y mecanismos alternativos de resolución de conflictos.
-    \item \href{https://www.uaq.mx/index.php/conocenos/rectoria/67-conocenos/350-proyectos-institucionales}{Proyectos-Institucionales}, \href{https://derechosuniversitarios.uaq.mx/}{Derechos Universitarios}.
+    % \item \href{https://www.uaq.mx/index.php/conocenos/rectoria/67-conocenos/350-proyectos-institucionales}{Proyectos-Institucionales}, \href{https://derechosuniversitarios.uaq.mx/}{Derechos Universitarios}.
+    \item \url{https://www.uaq.mx/index.php/conocenos/rectoria/67-conocenos/350-proyectos-institucionales}, \url{https://derechosuniversitarios.uaq.mx/}.
+    \item \href{run:https://www.uaq.mx/leyes/regadqu.pdf}{Capitulo II de la planeacion, programacion, presupuestacion y evaluacion de la administracion de los recursos materiales. capitulo VIII del padron de proveedores de la universidad capitulo X de los almacenes.pdf}
 \end{itemize}
-
-\href{https://www.uaq.mx/leyes/regadqu.pdf}{CAPITULO II DE LA PLANEACION, PROGRAMACION, PRESUPUESTACION Y EVALUACION DE LA ADMINISTRACION DE LOS RECURSOS MATERIALES. CAPITULO VIII DEL PADRON DE PROVEEDORES DE LA UNIVERSIDAD CAPITULO X
-DE LOS ALMACENES}
 
 % 
 % 
 % \addcontentsline{toc}{subsection}{4.1.1.3 Enterprise environmental factors}
 % \subsection*{4.1.1.3 Enterprise environmental factors}
-\addcontentsline{toc}{subsection}{4.1.1.3 Factores Ambientales Empresariales}
-\subsection*{4.1.1.3 Factores Ambientales Empresariales}
+% \addcontentsline{toc}{subsection}{4.1.1.3 Factores Ambientales Empresariales}
+% \subsection*{4.1.1.3 Factores Ambientales Empresariales}
+\addcontentsline{toc}{subsection}{Factores Ambientales Empresariales}
+\subsection*{Factores Ambientales Empresariales}
 
 Los factores ambientales que pueden influir al armar el documento son los siguientes:
 
@@ -281,8 +256,10 @@ Los factores ambientales que pueden influir al armar el documento son los siguie
 % 
 % \addcontentsline{toc}{subsection}{4.1.1.4 Organizational process assets}
 % \subsection*{4.1.1.4 Organizational process assets}
-\addcontentsline{toc}{subsection}{4.1.1.4 Activos de Procesos Organizativos}
-\subsection*{4.1.1.4 Activos de Procesos Organizativos}
+% \addcontentsline{toc}{subsection}{4.1.1.4 Activos de Procesos Organizativos}
+% \subsection*{4.1.1.4 Activos de Procesos Organizativos}
+\addcontentsline{toc}{subsection}{Activos de Procesos Organizativos}
+\subsection*{Activos de Procesos Organizativos}
 
 Los activos del proceso organizativo que pueden influir en el proceso de Elaboración de la Carta del Proyecto incluyen, entre otros, pero no limitados a:
 
@@ -290,11 +267,15 @@ Los activos del proceso organizativo que pueden influir en el proceso de Elabora
     \item \textbf{Políticas, procesos y procedimientos estándar de la organización}: Se refiere a las directrices, marcos y metodologías establecidos que una organización utiliza para iniciar y gestionar proyectos. Son importantes para garantizar que la carta del proyecto se elabora de forma coherente y estructurada, y que se ajusta a las metas y objetivos de la organización.
     \item \textbf{Marco de gobierno de carteras, programas y proyectos} (funciones y procesos de gobierno para proporcionar orientación y toma de decisiones): Garantizan que los proyectos se ajustan a las metas y objetivos generales de la organización y se gestionan de forma coherente y estructurada pueden influir en la forma en que se elabora, revisa y aprueba la carta del proyecto, así como en los criterios utilizados para evaluar su integridad y calidad.
         \begin{itemize}
-            \item o	En el caso de la UAQ, la guía para el registro, informe de avances y cambios de los proyectos de investigación puede ser accedida en: \href{https://dip.uaq.mx/docs/investigacion/formatos/A-50-01-Guia-para-el-registro-informes-y-cambios-a-los-proyectos-de-investigacion_v1.2.pdf}{Guia-para-el-registro-informes-y-cambios-a-los-proyectos-de-investigación}
-            \item Para una descripción general, descargables, guía para registros y acceso al master web de calidad, consultar la siguiente liga: \href{https://dip.uaq.mx/index.php/investigacion/coordinacion-de-investigacion-y-enlace}{Coordinación-de-investigación-y-enlace}
+            \item o	En el caso de la UAQ, la guía para el registro, informe de avances y cambios de los proyectos de investigación puede ser accedida en: \href{run:https://dip.uaq.mx/docs/investigacion/formatos/A-50-01-Guia-para-el-registro-informes-y-cambios-a-los-proyectos-de-investigacion_v1.2.pdf}{Guia-para-el-registro-informes-y-cambios-a-los-proyectos-de-investigación.pdf}.
         \end{itemize}
     \item \textbf{Métodos de seguimiento y elaboración de informes}: Ayudar a las partes interesadas a mantenerse informadas sobre el progreso del proceso de elaboración de la Carta.
     \item \textbf{Plantillas} (por ejemplo, plantilla de carta de proyecto);
+        \begin{itemize}
+            \item Para una descripción general, descargables, guía para registros y acceso al master web de calidad, consultar la siguiente liga: \url{https://dip.uaq.mx/index.php/investigacion/coordinacion-de-investigacion-y-enlace}
+            \item o	Para proyectos de vinculación, Sistema Universitario de Vinculación (SUV), consultar la siguiente liga: \url{https://www.uaq.mx/svsu/index.php/sistema-universitario-de-vinculacion}
+            \item o	Para proyectos en su modalidad de extensión, consultar la siguiente liga: \url{https://extension.uaq.mx/index.php/convocatoria} 
+        \end{itemize}
     \item \textbf{Repositorio de información histórica y lecciones aprendidas} (p. ej., registros y documentos del proyecto, información sobre los resultados de anteriores decisiones de selección de proyectos, e información sobre el rendimiento de anteriores proyectos)
 \end{itemize}
 
@@ -308,15 +289,19 @@ Los activos del proceso organizativo que pueden influir en el proceso de Elabora
 %  .4 Meetings
 % \addcontentsline{toc}{section}{4.1.2 Tools \& Techniques}
 % \section*{4.1.2 Tools \& Techniques}
-\addcontentsline{toc}{section}{4.1.2 Técnicas y Herramientas}
-\section*{4.1.2 Técnicas y Herramientas}
+% \addcontentsline{toc}{section}{4.1.2 Técnicas y Herramientas}
+% \section*{4.1.2 Técnicas y Herramientas}
+\addcontentsline{toc}{section}{Técnicas y Herramientas}
+\section*{Técnicas y Herramientas}
 
 % 
 %
 % \addcontentsline{toc}{subsection}{4.1.2.1 Expert judgment}
 % \subsection*{4.1.2.1 Expert judgment}
-\addcontentsline{toc}{subsection}{4.1.2.1 Criterio/Juicio Experto}
-\subsection*{4.1.2.1 Criterio/Juicio Experto}
+% \addcontentsline{toc}{subsection}{4.1.2.1 Criterio/Juicio Experto}
+% \subsection*{4.1.2.1 Criterio/Juicio Experto}
+\addcontentsline{toc}{subsection}{Criterio/Juicio Experto}
+\subsection*{Criterio/Juicio Experto}
 
 El juicio experto se define como el juicio basado en la experiencia en un área de aplicación, área de conocimiento, disciplina, industria, etc., según corresponda a la actividad que se esté realizando. Dicha pericia puede ser aportada por cualquier grupo o persona con formación especializada, conocimientos, habilidades, experiencia o formación.
 Para este proceso, se debe considerar la experiencia de personas o grupos con conocimientos especializados o capacitación en los siguientes temas:
@@ -332,8 +317,10 @@ Para este proceso, se debe considerar la experiencia de personas o grupos con co
 % 
 % \addcontentsline{toc}{subsection}{4.1.2.2 Data gathering}
 % \subsection*{4.1.2.2 Data gathering}
-\addcontentsline{toc}{subsection}{4.1.2.2 Recopilación de datos}
-\subsection*{4.1.2.2 Recopilación de datos}
+% \addcontentsline{toc}{subsection}{4.1.2.2 Recopilación de datos}
+% \subsection*{4.1.2.2 Recopilación de datos}
+\addcontentsline{toc}{subsection}{Recopilación de datos}
+\subsection*{Recopilación de datos}
 
 Las técnicas de recopilación de datos que se pueden utilizar para el proceso incluyen, entre otras, las siguientes:
 
@@ -346,8 +333,10 @@ Las técnicas de recopilación de datos que se pueden utilizar para el proceso i
 % 
 % \addcontentsline{toc}{subsection}{4.1.2.3 Interpersonal and team skills}
 % \subsection*{4.1.2.3 Interpersonal and team skills}
-\addcontentsline{toc}{subsection}{4.1.2.3 Habilidades Interpersonales y de Equipo}
-\subsection*{4.1.2.3 Habilidades Interpersonales y de Equipo}
+% \addcontentsline{toc}{subsection}{4.1.2.3 Habilidades Interpersonales y de Equipo}
+% \subsection*{4.1.2.3 Habilidades Interpersonales y de Equipo}
+\addcontentsline{toc}{subsection}{Habilidades Interpersonales y de Equipo}
+\subsection*{Habilidades Interpersonales y de Equipo}
 
 Estas incluyen la gestión de conflictos, la facilitación y la gestión de reuniones.
 \textbf{La gestión de conflictos} es importante debido a que durante el desarrollo de un proyecto siempre esta expuesto a problemas, desde escases de recursos hasta en la diferencia de estilos de trabajo de los integrantes. 
@@ -370,8 +359,10 @@ Para la planificación de las reuniones debe de considerarse estos pasos:
 % 
 % \addcontentsline{toc}{subsection}{4.1.2.4 Meetings}
 % \subsection*{4.1.2.4 Meetings}
-\addcontentsline{toc}{subsection}{4.1.2.4 Reuniones}
-\subsection*{4.1.2.4 Reuniones}
+% \addcontentsline{toc}{subsection}{4.1.2.4 Reuniones}
+% \subsection*{4.1.2.4 Reuniones}
+\addcontentsline{toc}{subsection}{Reuniones}
+\subsection*{Reuniones}
 
 Son elementos importantes utilizados para analizar el enfoque del proyecto, sus avances, los problemas presentados hasta el momento, con la finalidad de verificar el alcance de los objetivos expuestos desde el inicio del proyecto.
 La principal reunión a tener en cuenta es la reunión de lanzamiento, cuyo propósito es comunicar los objetivos del proyecto, su delimitación, los roles y responsabilidades de cada integrante del equipo.
@@ -385,15 +376,19 @@ Es recomendable realizar una reunión al iniciar cada etapa del proyecto y varia
 %  .2 Assumption log
 % \addcontentsline{toc}{section}{4.1.3 DEVELOP PROJECT CHARTER: OUTPUTS}
 % \section*{4.1.3 DEVELOP PROJECT CHARTER: OUTPUTS}
-\addcontentsline{toc}{section}{4.1.3 Desarrollo de la carta del proyecto: Resultados}
-\section*{4.1.3 Desarrollo de la carta del proyecto: Resultados}
+% \addcontentsline{toc}{section}{4.1.3 Desarrollo de la carta del proyecto: Resultados}
+% \section*{4.1.3 Desarrollo de la carta del proyecto: Resultados}
+\addcontentsline{toc}{section}{Desarrollo de la carta del proyecto: Resultados}
+\section*{Desarrollo de la carta del proyecto: Resultados}
 
 % 
 %
 % \addcontentsline{toc}{subsection}{4.1.3.1 Project charter}
 % \subsection*{4.1.3.1 Project charter}
-\addcontentsline{toc}{subsection}{4.1.3.1 Acta de Constitución del Proyecto}
-\subsection*{4.1.3.1 Carta de Constitución del Proyecto}
+% \addcontentsline{toc}{subsection}{4.1.3.1 Acta de Constitución del Proyecto}
+% \subsection*{4.1.3.1 Carta de Constitución del Proyecto}
+\addcontentsline{toc}{subsection}{Acta de Constitución del Proyecto}
+\subsection*{Carta de Constitución del Proyecto}
 
 Crear un documento con las siguientes características.
 
@@ -441,20 +436,35 @@ Crear un documento con las siguientes características.
     \item Los requisitos de aprobación del proyecto (es decir, en qué consiste el éxito del proyecto, quién decide si el proyecto tiene éxito y quién firma la aprobación del proyecto),
     \item Criterios de salida del proyecto (es decir, cuáles son las condiciones que se deben cumplir para cerrar o cancelar el proyecto o fase),
     \item El director del proyecto asignado, su responsabilidad y su nivel de autoridad
+        \begin{itemize}
+            \item Describir su responsabilidad en el proyecto y lo necesario para mantener una buena comunicación.
+        \end{itemize}
     \item El nombre y el nivel de autoridad del patrocinador o de quienes autorizan el acta de constitución del proyecto.
 \end{itemize}
+
+Se propone el formato, véase la Figura \ref{CartaConstitutiva} o descargue el formato en la siguiente liga: \url{https://github.com/LAAngeles/Seminario_VI_2023-1/}
+% 
+% 
+%#############################################
+\begin{figure}[h]
+    \centering
+    \includegraphics[trim = {18mm 18mm 12mm 11mm},clip,scale=0.5]{img/formatoCartaDelProyecto.pdf}
+    \caption{Ejemplo del formato de la carta constitutiva del proyecto.}
+    \label{CartaConstitutiva}
+\end{figure}
+%#############################################
 % 
 % 
 % \addcontentsline{toc}{subsection}{4.1.3.2 Assumption log}
 % \subsection*{4.1.3.2 Assumption log}
-\addcontentsline{toc}{subsection}{4.1.3.2 Registro de supuestos}
-\subsection*{4.1.3.2 Registro de supuestos}
+% \addcontentsline{toc}{subsection}{4.1.3.2 Registro de supuestos}
+% \subsection*{4.1.3.2 Registro de supuestos}
+\addcontentsline{toc}{subsection}{Registro de supuestos}
+\subsection*{Registro de supuestos}
 
 Desarrollar un registro de supuestos más detallado para registrar todos los supuestos y restricciones a lo largo del ciclo de vida del proyecto.
 % Las suposiciones y restricciones estratégicas y operativas de alto nivel normalmente se identifican en el caso de negocios antes de que se inicie el proyecto y fluirán hacia el acta de constitución del proyecto. 
 Los supuestos de actividades y tareas de nivel inferior que se generan a lo largo del proyecto, como la definición de especificaciones técnicas, estimaciones, el cronograma, los riesgos, etc. 
-
-\href{https://github.com/LAAngeles/Seminario_VI_2023-1/}{Repositorio}
 % 
 % 
 \end{document}
